@@ -1,0 +1,96 @@
+.frameChild {
+  height: 67px;
+  width: 1728px;
+  position: relative;
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid var(--neutral-grey);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.jobPreview,
+.separator {
+  position: relative;
+  z-index: 3;
+}
+.jobPreview {
+  text-decoration: none;
+  align-self: stretch;
+  font-weight: 600;
+  color: inherit;
+}
+.separator {
+  height: 2px;
+  flex: 1;
+  background-color: var(--color-tomato);
+}
+.jobPreviewHeader,
+.separatorWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.separatorWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-8xl) 0 var(--padding-6xl);
+}
+.jobPreviewHeader {
+  width: 117px;
+  flex-direction: column;
+  gap: var(--gap-mid);
+  color: var(--color-tomato);
+  font-family: var(--heading-1-semibold-16-0694rem-16px);
+}
+.applicants,
+.match,
+.messages {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 101px;
+  z-index: 3;
+}
+.match,
+.messages {
+  min-width: 60px;
+}
+.messages {
+  min-width: 96px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid var(--neutral-grey);
+  box-sizing: border-box;
+  width: 1728px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-lg) var(--padding-81xl) 0;
+  gap: var(--gap-53xl);
+  max-width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--heading-1-medium-20-0833rem-20px-size);
+  color: var(--neutral-grey-4);
+  font-family: var(--heading-1-medium-16-0694rem-16px);
+}
+@media screen and (max-width: 825px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .applicants,
+  .jobPreview,
+  .match,
+  .messages {
+    font-size: var(--heading-1-medium-16-0694rem-16px-size);
+  }
+}

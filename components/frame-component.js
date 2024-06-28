@@ -6,14 +6,14 @@ const FrameComponent = ({ className = "" }) => {
     <div className={[styles.rectangleParent, className].join(" ")}>
       <div className={styles.frameChild} />
       <div className={styles.jobPreviewHeader}>
-        <a className={styles.jobPreview}>Job preview</a>
+        <a className={styles.jobPreview} style={{'cursor':'pointer'}}>Job preview</a>
         <div className={styles.separatorWrapper}>
           <div className={styles.separator} />
         </div>
       </div>
-      <a className={styles.applicants}>Applicants</a>
-      <a className={styles.match}>Match</a>
-      <a className={styles.messages}>Messages</a>
+      <a className={styles.applicants} style={{'cursor':'pointer'}}>Applicants</a>
+      <a className={styles.match} style={{'cursor':'pointer'}}>Match</a>
+      <a className={styles.messages} style={{'cursor':'pointer'}}>Messages</a>
     </div>
   );
 };

@@ -5,7 +5,7 @@
   background-color: var(--colors-background-bg-primary);
   width: 1440px;
   height: 781px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -306,11 +306,10 @@
   z-index: 2;
 }
 .actionDividerParent {
-  position: absolute;
   top: 0;
-  left: 1319px;
-  width: 409px;
-  padding: 36px 24px 753px var(--padding-6xl);
+  left: 73%;
+  width: 390px;
+  padding: 27px 15px 30px var(--padding-6xl);
   box-sizing: border-box;
   gap: 24px;
   font-size: var(--heading-1-medium-16-0694rem-16px-size);
@@ -664,19 +663,19 @@
   z-index: 1;
 }
 .jobInfo {
-  top: 199px;
+  top: 192px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 64px;
+  gap: 1rem;
 }
 .label4 {
   top: 379px;
   line-height: 19.2px;
   font-weight: 500;
   display: inline-block;
-  min-width: 91px;
+  min-width: 70px;
 }
 .benefits,
 .handleTheUiux {
@@ -1032,9 +1031,10 @@
   left: 0;
   width: 1728px;
   height: 1152px;
-  overflow: hidden;
+  overflow-y:scroll;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
@@ -1048,9 +1048,9 @@
   width: 2880px;
   height: 1546px;
   position: relative;
-  opacity: 0.1;
+  opacity: 0.8;
   flex-shrink: 0;
-  max-width: 167%;
+  max-width: 100%;
 }
 .jobPreviewDashboard {
   width: 100%;
@@ -1073,7 +1073,7 @@
   }
   .gridWithStarsParent {
     height: auto;
-    min-height: 1546;
+    min-height: 1546px;
   }
   .jobPreviewDashboard {
     height: auto;
@@ -1124,7 +1124,7 @@
   }
   .jobDetails1 {
     height: auto;
-    min-height: 1283;
+    min-height: 1283px;
   }
   .jobDetails {
     height: auto;

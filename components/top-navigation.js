@@ -36,7 +36,7 @@ const TopNavigation = ({ className = "" }) => {
                 <div className={styles.messagesNotification} />
               </div>
             </div>
-            <a className={styles.messages}>Messages</a>
+            <a className={styles.messages} style={{'cursor':'pointer'}}>Messages</a>
           </div>
         </div>
         <div className={styles.frameDiv}>
@@ -49,7 +49,7 @@ const TopNavigation = ({ className = "" }) => {
                 src="/coinshand.svg"
               />
             </div>
-            <a className={styles.payments}>Payments</a>
+            <a className={styles.payments} style={{'cursor':'pointer'}}>Payments</a>
           </div>
         </div>
       </div>
@@ -66,8 +66,13 @@ const TopNavigation = ({ className = "" }) => {
               <div className={styles.notificationsIndicator} />
             </div>
           </div>
+          <img  
+                  style={{'height':'2.3rem','borderRadius':'1rem'}}
+                    src="/rectangle-43@2x.png"
+                  />
           <select className={styles.option1Wrapper}>
-            <option value="option_1">Option 1</option>
+            <option value="Atlassian">
+            </option>
           </select>
         </div>
       </div>
